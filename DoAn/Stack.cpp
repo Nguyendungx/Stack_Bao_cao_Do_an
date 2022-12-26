@@ -232,14 +232,32 @@ void kiemTra(STACK& s)
     cin >> t;
     if (t == 1)
     {
-        add(s);
-        kiemTra(s);
+        if (size(s) >= 5)
+        {
+            cout << "Ngan xep day.Khong the them" << endl;
+            kiemTra(s);
+        }
+        else
+        {
+            add(s);
+            kiemTra(s);
+        }
+
     }
 
     else if (t == 2)
     {
-        pop_back(s);
-        kiemTra(s);
+        if (size(s) == 0)
+        {
+            cout << "Ngan xep Trong. Khong the xoa." << endl;
+            kiemTra(s);
+        }
+        else
+        {
+            pop_back(s);
+            kiemTra(s);
+        }
+
     }  
     else
         exit;
