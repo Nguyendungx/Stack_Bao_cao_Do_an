@@ -265,6 +265,25 @@ void kiemTra(STACK& s)
 int main() {
     initgraph();
     char s1[] = "Press any key to view the program.";
+    setcolor(5);
+    line(500, 200, 500, 500);
+    line(600, 200, 600, 500);
+    line(500, 500, 600, 500);
+    for (int i = 0; i < 3; i++)
+    {
+        rectangle(510, 480 - i * 60, 590, 430 - i * 60);
+    }
+    rectangle(510, 280, 590, 230);
+    rectangle(550, 140, 630, 190);
+    setcolor(13);
+    line(450, 150, 450, 450);
+    line(430, 430, 450, 450);
+    line(470, 430, 450, 450);
+    line(650, 150, 650, 450);
+    line(630, 170, 650, 150);
+    line(670, 170, 650, 150);
+    drawText(350, 200, "PUSH");
+    drawText(650, 200, "POP");
     drawText(400, 50, s1);
     _getch();
     system("cls");
