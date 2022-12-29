@@ -285,6 +285,8 @@ int main() {
     drawText(350, 200, "PUSH");
     drawText(650, 200, "POP");
     drawText(400, 50, s1);
+    drawText(480, 100, "SIMULATION STACK");
+
     _getch();
     system("cls");
     //tao mot stack s
